@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Trembesi</title>
+<meta name="description" content="Get in touch with Trembesi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/mark.png" alt="">Trembesi</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">Menu</button>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="advisory.html">Advisory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Tell us what you're working on.</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact">
+      <!-- Form backend: sign up at https://web3forms.com (free), paste your access key below. Submissions go to the email you register. -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New enquiry — trembesigroup.com">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="org">Organization</label>
+        <input id="org" name="organization" type="text">
+
+        <label for="topic">I'm reaching out about</label>
+        <select id="topic" name="topic" required>
+          <option value="" disabled selected>Select one</option>
+          <option>Advisory — I'm an investor</option>
+          <option>Advisory — I'm a company or owner</option>
+          <option>Selling a brand or business</option>
+          <option>Partnership</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button class="btn" type="submit">Send message</button>
+      </form>
+
+      <aside class="side">
+        <div class="block">
+          <h3>Email</h3>
+          <p><a href="mailto:operations@trembesigroup.com">operations@trembesigroup.com</a></p>
+        </div>
+        <div class="block">
+          <h3>Entity</h3>
+          <p>Trembesi LLC<br>California, USA</p>
+        </div>
+        <div class="block" style="border:0">
+          <h3>Founder</h3>
+          <p>Ray Hardjadinata<br>Jakarta, Indonesia (UTC+7)</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><img src="img/mark.png" alt="">Trembesi</a>
+      <p style="margin-top:12px;max-width:40ch">Trembesi LLC · California, USA<br>Founder based in Jakarta, Indonesia</p>
+    </div>
+    <ul>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="advisory.html">Advisory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="mailto:operations@trembesigroup.com">operations@trembesigroup.com</a></li>
+      <li><a href="#" rel="noopener">LinkedIn</a></li>
+      <li>© 2026 Trembesi LLC</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
