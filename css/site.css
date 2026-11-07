@@ -120,6 +120,12 @@ p{max-width:62ch}
 .blocks h3{color:var(--green);margin-bottom:12px}
 .blocks p{color:var(--ink-2)}
 .blocks p + p{margin-top:12px}
+.creed{font-family:var(--serif);font-size:1.5rem;line-height:1.35;color:var(--green);margin:4px 0 28px;max-width:40ch}
+.principles{list-style:none;counter-reset:p;margin:0}
+.principles li{counter-increment:p;display:grid;grid-template-columns:48px 1fr;column-gap:8px;padding:20px 0;border-top:1px solid var(--line)}
+.principles li::before{content:counter(p,decimal-leading-zero);grid-row:span 2;font-family:var(--serif);font-size:1.6rem;line-height:1.2;color:var(--accent)}
+.principles h4{font-family:var(--sans);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-2);font-weight:600;margin-bottom:6px}
+.principles p{margin:0}
 @media(max-width:860px){.about{grid-template-columns:1fr;gap:36px}.about-name{position:static}}
 
 /* contact */
